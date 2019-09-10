@@ -16,7 +16,7 @@ public function insertFirst($data){
     $link = new Note($data);
     $link->next = $this->firstNote;
     $this->firstNote = $link;
-    if ($this->lastNote == NUL){
+    if ($this->lastNote == NULL){
         $this->lastNote = $link;
     }
     $this->count++;
